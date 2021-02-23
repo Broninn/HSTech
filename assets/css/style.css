@@ -308,3 +308,132 @@ header {
 .section-projects-filters li:first-child {
     border-left: 0px;
 }
+.section-projects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-projects-photo {
+    width: 280px;
+}
+.section-project-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.section-project-photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.section-project-photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+    display: none;
+}
+.section-project-photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-project-photoarea:hover .section-project-photoinfo{
+    display: flex;
+}
+
+/* EQUIPE */
+.bg-team {
+    background-image: url(../../media/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+.section-team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+.section-team .slide {
+    width: 280px;
+    height: 100%;
+    display: inline-block;
+    background-color: #FFF;
+    margin-right: 20px;
+}
+.section-team .slidearea {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 30px;
+}
+.section-team-area .sliders-pointers {
+    width: 100%;
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-team-area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color-orange);
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-team-area .pointer.active {
+    background-color: var(--color-orange);
+}
+.section-team-avatar {
+    width: 150px;
+    height: auto;
+}
+.section-team-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.section-team-role {
+    font-size: 15px;
+    color: #999;
+    margin-top: 5px;
+}
+.section-team-social {
+    display: flex;
+    margin-top: 20px;
+
+}
+.section-team-social a {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    background-color: #CCC;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+}
+.section-team-social a:hover {
+    background-color: var(--color-orange);
+}
