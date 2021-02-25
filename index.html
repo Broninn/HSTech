@@ -522,22 +522,82 @@
         <section class="default light">
             <div class="section-title">contato</div>
             <div class="section-desc">Nosso escrtório encontra-se em Campo Largo, PR - Brasil</div>
-            <div class="section-contact">
-                <form class="section-contact-form">
-                    <div class="section-contact-form-info">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Nome:" required/>
-                        <input type="text" name="email" id="email" class="form-control" placeholder="Email:" required/>
-                    </div>
-                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Assunto">
-                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Mensagem"></textarea>
-                    <div class="form-control">
-                        <div>
-                            <button type="submit" id="submit" class="submit-button">
-                                Enviar mensagem
-                            </button>
+            <div class="section-body">
+                <div class="section-contact">
+                    <form class="section-contact-form" method="POST">
+                        <div class="section-contact-form-info">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Nome:" required/>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email:" required/>
                         </div>
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Assunto:">
+                        <textarea name="comment" id="comments" class="input-textarea" placeholder="Mensagem:"></textarea>
+                        <div class="form-control">
+                            <div>
+                                <input type="submit" value="Enviar mensagem:" class="button" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section-map">
+            <div class="section-map-area">
+                <div class="section-map-info">
+                    <div class="section-map-info-item">
+                        <div class="section-map-info-item-img">
+                            <img src="assets/images/carta.png" alt="">
+                        </div>
+                        bruno-hs@outlook.com
                     </div>
-                </form>
+                    <div class="section-map-info-item">
+                        <div class="section-map-info-item-img">
+                            <img src="assets/images/localizacao.png" alt="">
+                        </div>
+                        Rua Octávio Lopes, nº6
+                    </div>
+                    <div class="section-map-info-item">
+                        <div class="section-map-info-item-img">
+                            <img src="assets/images/telefone.png" alt="">
+                        </div>
+                        +55 (41) 99101-2987
+                    </div>
+                    <div class="section-map-info-item">
+                        <div class="section-map-info-item-img">
+                            <img src="assets/images/web.png" alt="">
+                        </div>
+                        https://github.com/broninn
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default dark">
+            <div class="section-body">
+                <div class="section-footer">
+                    <div class="section-footer-midia">
+                        <div class="section-footer-midias">
+                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/twitter.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/arroba.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/linkedin.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/facebook.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/googleplus.png" alt=""></a></div>
+                        </div>
+                        <div class="copyright"><small>&copy; Copyright 2021, Bruno Henrique da Silva</small></div>
+                    </div>  
+                    <div class="section-footer-info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis vitae repellendus sequi, fugit quaerat nisi recusandae odio laudantium reprehenderit et maiores, similique nobis mollitia totam sed delectus illo? Deleniti! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum accusamus est autem dolorem maxime, dolore consequatur vero ex, exercitationem aliquid at corrupti pariatur, voluptatem mollitia porro! Dicta mollitia ducimus voluptates.
+                    </div>
+                    <div class="section-footer-subscribe">
+                        <form class="section-footer-form" method="POST">
+                            <div class="section-footer-form-info">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email para se inscrever:"/>
+                            <div class="form-control">
+                                <div>
+                                    <input type="submit" value="Enviar mensagem:" class="button" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
