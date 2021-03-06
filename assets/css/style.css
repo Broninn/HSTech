@@ -84,7 +84,7 @@ header {
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
-    background-image: url('../../media/bg.jpg');
+    background-image: url('../../media/bg.png');
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
