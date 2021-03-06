@@ -8,6 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,9 +28,13 @@
                     <a href=""><img src="media/Logo HST Branco 80x80.png" alt=""></a>
                 </div>
             </div>
-            <div class="menu">
-                <img class="menu-opener" src="assets/images/menu.png" alt="">
-                <nav>
+            <div class="menu" id="menu">
+                <nav id="nav" class="navbar">
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="#">HOME</a></li>
                         <li><a href="#aboutus">Sobre</a></li>
@@ -114,338 +129,55 @@
                 </div>
             </div>
         </section>
-        <!--<section class="default light" id="projects">
-            <div class="section-title">Nossos projetos</div>
-            <div class="section-desc">O que criamos?</div>
-            <div class="section-body">
-                <div class="section-projects">
-                    <div class="section-projects-filters">
-                        <ul>
-                            <li class="active">Todos</li>
-                            <li>Fotos</li>
-                            <li>Avisos</li>
-                            <li>Desenvolvimentos</li>
-                            <li>Misc</li>
-                            <li>Outros</li>
-                        </ul>
-                    </div>
-                    <div class="section-projects-photos">
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto7.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto9.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="section-projects-photo">
-                            <div class="section-project-photoarea">
-                                <div class="section-project-photoinfo">
-                                    <h5>ABOUT</h5>
-                                    <p>Teste de frase</p>
-                                </div>
-                                <img src="media/foto3.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <a href="" class="button">Mais projetos</a>
-                </div>
-            </div>
-        </section>
-        <section class="default dark bg-team" id="team">
-            <div class="section-team-area">
-                <div class="section-title">NOSSA EQUIPE</div>
-                <div class="section-desc">Nossos colaboradores</div>
-                <div class="section-body">
-                    <div class="section-team">
-                        <div class="sliders">
-                            <div class="slide">
-                                <div class="slidearea">
-                                    <img src="media/mulher1.png" class="section-team-avatar" alt="mulher1">
-                                    <div class="section-team-name">
-                                        JANE DOE
-                                    </div>
-                                    <div class="section-team-role">
-                                        Master mind
-                                    </div>
-                                    <div class="section-team-social">
-                                        <a href=""><img src="assets/images/facebook.png" alt=""></a>
-                                        <a href=""><img src="assets/images/googleplus.png" alt=""></a>
-                                        <a href=""><img src="assets/images/linkedin.png" alt=""></a>
-                                        <a href=""><img src="assets/images/pinterest.png" alt=""></a>
-                                        <a href=""><img src="assets/images/twitter.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div><div class="slide">
-                                <div class="slidearea">
-                                    <img src="media/homem1.png" class="section-team-avatar" alt="mulher1">
-                                    <div class="section-team-name">
-                                        MIKE RUN
-                                    </div>
-                                    <div class="section-team-role">
-                                        Creative head
-                                    </div>
-                                    <div class="section-team-social">
-                                        <a href=""><img src="assets/images/facebook.png" alt=""></a>
-                                        <a href=""><img src="assets/images/googleplus.png" alt=""></a>
-                                        <a href=""><img src="assets/images/linkedin.png" alt=""></a>
-                                        <a href=""><img src="assets/images/pinterest.png" alt=""></a>
-                                        <a href=""><img src="assets/images/twitter.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div><div class="slide">
-                                <div class="slidearea">
-                                    <img src="media/mulher2.png" class="section-team-avatar" alt="mulher1">
-                                    <div class="section-team-name">
-                                        ANA JOHNSON
-                                    </div>
-                                    <div class="section-team-role">
-                                        Líder Técnica
-                                    </div>
-                                    <div class="section-team-social">
-                                        <a href=""><img src="assets/images/facebook.png" alt=""></a>
-                                        <a href=""><img src="assets/images/googleplus.png" alt=""></a>
-                                        <a href=""><img src="assets/images/linkedin.png" alt=""></a>
-                                        <a href=""><img src="assets/images/pinterest.png" alt=""></a>
-                                        <a href=""><img src="assets/images/twitter.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div><div class="slide">
-                                <div class="slidearea">
-                                    <img src="media/mulher2.png" class="section-team-avatar" alt="mulher1">
-                                    <div class="section-team-name">
-                                        ANA JOHNSON
-                                    </div>
-                                    <div class="section-team-role">
-                                        Líder Técnica
-                                    </div>
-                                    <div class="section-team-social">
-                                        <a href=""><img src="assets/images/facebook.png" alt=""></a>
-                                        <a href=""><img src="assets/images/googleplus.png" alt=""></a>
-                                        <a href=""><img src="assets/images/linkedin.png" alt=""></a>
-                                        <a href=""><img src="assets/images/pinterest.png" alt=""></a>
-                                        <a href=""><img src="assets/images/twitter.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sliders-pointers">
-                        <div class="pointer active"></div>
-                        <div class="pointer"></div>
-                        <div class="pointer"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="default light" id="clients">
-            <div class="section-title">Nossos clientes</div>
-            <div class="section-desc">Testemunhos</div>
-            <div class="section-client">
-                <div class="sliders">
-                    <div class="slide">
-                        <div class="slidearea">
-                            <img src="media/homem2.png" class="section-client-photo" alt="">
-                            <div class="section-client-name">
-                                John Doe
-                            </div>
-                            <div class="section-client-dep">
-                                Head of PR Departament
-                            </div>
-                            <div class="quote">
-                                <img src="assets/images/quote.png"  alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, itaque quasi! Asperiores, molestias magnam aliquam mollitia impedit et nemo iste cumque laudantium, blanditiis ut esse, maiores eum corporis numquam tempore?</p>   
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slidearea">
-                            <img src="media/homem2.png" class="section-client-photo" alt="">
-                            <div class="section-client-name">
-                                John Doe
-                            </div>
-                            <div class="section-client-dep">
-                                Head of PR Departament
-                            </div>
-                            <div class="quote">
-                                <img src="assets/images/quote.png"  alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, itaque quasi! Asperiores, molestias magnam aliquam mollitia impedit et nemo iste cumque laudantium, blanditiis ut esse, maiores eum corporis numquam tempore?</p>   
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slidearea">
-                            <img src="media/homem2.png" class="section-client-photo" alt="">
-                            <div class="section-client-name">
-                                John Doe
-                            </div>
-                            <div class="section-client-dep">
-                                Head of PR Departament
-                            </div>
-                            <div class="quote">
-                                <img src="assets/images/quote.png"  alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, itaque quasi! Asperiores, molestias magnam aliquam mollitia impedit et nemo iste cumque laudantium, blanditiis ut esse, maiores eum corporis numquam tempore?</p>   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sliders-pointers">
-                    <div class="pointer active"></div>
-                    <div class="pointer"></div>
-                    <div class="pointer"></div>
-                </div>
-            </div>
-        </section>
-        <section class="company" id="company">
-            <div class="companys">
-                <img src="media/empresa1.png" alt="">
-                <img src="media/empresa2.png" alt="">
-                <img src="media/empresa3.png" alt="">
-                <img src="media/empresa4.png" alt="">
-                <img src="media/empresa5.png" alt="">
-                <img src="media/empresa6.png" alt="">
-            </div>
-        </section>-->
         <section class="default light" id="prices">
             <div class="section-title">PREÇOS</div>
-            <div class="section-desc">Tabela de preços</div>
+            <div class="section-desc">Tabela dos pacotes</div>
             <div class="section-prices">
                 <div class="section-price">
+                    <div class="section-price-title">ESPECÍFICO REMOTO</div>
+                    <div class="section-price-price">R$50,00</div>
+                    <div class="section-price-period">/hora</div>
+                    <div class="section-price-point">Atendimento por hora <br> --</div>
+                    <div class="section-price-point">Computadores<br> --</div>
+                    <div class="section-price-point">Redes e impressoras<br> --</div>
+                    <div class="section-price-point">Atendimento remoto</div>
+                    <div><a href="https://api.whatsapp.com/send?phone=5541995143500" target="_blank" class="button">Quero esta oferta!</a></div>
+                </div>
+                <div class="section-price">
+                    <div class="section-price-title">ESPECÍFICO PRESENCIAL</div>
+                    <div class="section-price-price">R$70,00<span>+ Distância</span></div>
+                    <div class="section-price-period">/hora</div>
+                    <div class="section-price-point">Atendimento por hora <br> --</div>
+                    <div class="section-price-point">Computadores<br> --</div>
+                    <div class="section-price-point">Redes e impressoras<br> --</div>
+                    <div class="section-price-point">Atendimento presencial</div>
+                    <div><a href="https://api.whatsapp.com/send?phone=5541995143500" target="_blank" class="button">Quero esta oferta!</a></div>
+                </div>
+                <div class="section-price">
                     <div class="section-price-title">BÁSICO</div>
-                    <div class="section-price-price">R$100,00</div>
-                    <div class="section-price-period">/MENSAL</div>
-                    <div class="section-price-point">Configuração de sistemas <br> --</div>
-                    <div class="section-price-point">Limpeza de computadores<br> --</div>
-                    <div class="section-price-point">Remoção de vírus<br> --</div>
-                    <div class="section-price-point">Estrutura de Redes</div>
-                    <div><a href="https://api.whatsapp.com/send?phone=5541995143500" target="_blank" class="button">Quero esta oferta!</a></div>
-                </div>
-                <div class="section-price">
-                    <div class="section-price-title">INTERMEDIÁRIO</div>
-                    <div class="section-price-price">R$150,00</div>
-                    <div class="section-price-period">/MENSAL</div>
-                    <div class="section-price-point">Configuração de sistemas <br> --</div>
-                    <div class="section-price-point">Limpeza de computadores<br> --</div>
-                    <div class="section-price-point">Remoção de vírus<br> --</div>
-                    <div class="section-price-point">Estrutura de Redes</div>
-                    <div><a href="https://api.whatsapp.com/send?phone=5541995143500" target="_blank" class="button">Quero esta oferta!</a></div>
-                </div>
-                <div class="section-price">
-                    <div class="section-price-title">AVANÇADO</div>
                     <div class="section-price-price">R$250,00</div>
                     <div class="section-price-period">/MENSAL</div>
-                    <div class="section-price-point">Configuração de sistemas <br> --</div>
-                    <div class="section-price-point">Limpeza de computadores<br> --</div>
-                    <div class="section-price-point">Remoção de vírus<br> --</div>
-                    <div class="section-price-point">Estrutura de Redes</div>
+                    <div class="section-price-point"><strong>04 horas</strong> de atendimento remoto<br>--</div>
+                    <div class="section-price-point"><strong>02 horas</strong> de atendimento presencial<br>--</div>
+                    <div class="section-price-point">Todo o atendimento disponibilizado<br> --</div>
+                    <div class="section-price-point">Prazo de 24 horas úteis</div>
                     <div><a href="https://api.whatsapp.com/send?phone=5541995143500" target="_blank" class="button">Quero esta oferta!</a></div>
                 </div>
                 <div class="section-price">
                     <div class="section-price-title">COMPLETO</div>
-                    <div class="section-price-price">R$300,00</div>
+                    <div class="section-price-price">R$500,00</div>
                     <div class="section-price-period">/MENSAL</div>
-                    <div class="section-price-point">Configuração de sistemas <br> --</div>
-                    <div class="section-price-point">Limpeza de computadores<br> --</div>
-                    <div class="section-price-point">Remoção de vírus<br> --</div>
-                    <div class="section-price-point">Estrutura de Redes</div>
+                    <div class="section-price-point"><strong>10 horas</strong> de atendimento remoto<br>--</div>
+                    <div class="section-price-point"><strong>04 horas</strong> de atendimento presencial<br>--</div>
+                    <div class="section-price-point">Todo o atendimento disponibilizado<br> --</div>
+                    <div class="section-price-point">Prazo de 24 horas úteis</div>
                     <div><a href="https://api.whatsapp.com/send?phone=5541995143500" target="_blank" class="button">Quero esta oferta!</a></div>
                 </div>
             </div>
         </section>
         <section class="default light overlight" id="aditionals">
             <div class="section-title">Site</div>
-            <div class="section-desc">Já pensou em ter um site para você anunciar e vender mais?</div>
+            <div class="section-desc">Já pensou em ter um site para você anunciar e vender mais?<br>Podemos desenvolver um site para seu comércio e ajudar na divulgação da sua empresa além do espaço fisíco</div>
             <div class="section-aditionals">
                 <div class="section-aditional">
                     <div class="section-aditional-image">
@@ -488,63 +220,34 @@
         </div>
         </section>
         <section class="default dark" id="facts">
-            <div class="section-title">ALGUNS FATOS</div>
-            <div class="section-desc">Sobre nosso trabalho</div>
+            <div class="section-title">Por que a HS Tech?</div>
+            <div class="section-desc">Alguns fatos e curiosidades</div>
             <div class="section-body">
                 <div class="section-facts">
                     <div class="section-fact">
-                        <div class="item1"><h2>1000</h2></div>
+                        <div class="item1"><h2>ATENDIMENTO</h2></div>
                         <div class="item2">
                             <div class="traco"></div>
-                            <h2>projetos realizados</h2>
+                            <h2>Eficiência e velocidade</h2>
                         </div>
-                        <div class="item3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                        <div class="item3"><p>Nossos atendimentos se tornaram a nossa característica. Se existe um problema, precisa ser resolvido o mais rápido possível e de melhor maneira para que não aconteça novamente</p></div>
                     </div>
                     <div class="section-fact">
-                        <div class="item1"><h2>900</h2></div>
+                        <div class="item1"><h2>CLIENTES</h2></div>
                         <div class="item2">
                             <div class="traco"></div>
-                            <h2>PHOTOS</h2>
+                            <h2>Satisfação</h2>
                         </div>
-                        <div class="item3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                        <div class="item3"><p>Possuímos diversos clientes que confirmam nossos atendimentos. Focamos no que interessa, sem enrolação. Trabalho de qualidade que só encontra aqui</p></div>
                     </div>
                     <div class="section-fact">
-                        <div class="item1"><h2>500</h2></div>
+                        <div class="item1"><h2>ideias</h2></div>
                         <div class="item2">
                             <div class="traco"></div>
-                            <h2>Marketing Ideas</h2>
+                            <h2>para melhorar sua empresa</h2>
                         </div>
-                        <div class="item3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                        <div class="item3"><p>Possuímos consultores preparados para te auxiliar e atender, e te instruir para a melhor decisão do que comprar, reformar ou modificar, para que sua empresa fique pronto para crescer ainda mais</p></div>
                     </div>
-                    <!--<div class="section-fact">
-                        <div class="item1"><h2>100</h2></div>
-                        <div class="item2">
-                            <div class="traco"></div>
-                            <h2>exhibitions</h2>
-                        </div>
-                        <div class="item3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                    </div>-->
-                </div>
-            </div>
-        </section>
-        <section class="default light" id="contact">
-            <div class="section-title">contato</div>
-            <div class="section-desc">Nosso escrtório encontra-se em Campo Largo, PR - Brasil</div>
-            <div class="section-body">
-                <div class="section-contact">
-                    <form class="section-contact-form" method="POST">
-                        <div class="section-contact-form-info">
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Nome:" required/>
-                            <input type="text" name="email" id="email" class="form-control" placeholder="Email:" required/>
-                        </div>
-                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Assunto:">
-                        <textarea name="comment" id="comments" class="input-textarea" placeholder="Mensagem:"></textarea>
-                        <div class="form-control">
-                            <div>
-                                <input type="submit" value="Enviar mensagem:" class="button" />
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
@@ -555,7 +258,7 @@
                         <div class="section-map-info-item-img">
                             <img src="assets/images/carta.png" alt="">
                         </div>
-                        bruno-hs@outlook.com
+                        <a href="mailto:bruno-hs@outlook.com">bruno-hs@outlook.com</a>
                     </div>
                     <div class="section-map-info-item">
                         <div class="section-map-info-item-img">
@@ -585,27 +288,14 @@
                 <div class="section-footer">
                     <div class="section-footer-midia">
                         <div class="section-footer-midias">
-                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/twitter.png" alt=""></a></div>
-                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/arroba.png" alt=""></a></div>
-                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/linkedin.png" alt=""></a></div>
-                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/facebook.png" alt=""></a></div>
-                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/googleplus.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href="mailto:bruno-hs@outlook.com"><img src="assets/images/arroba.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href="https://www.linkedin.com/in/bruno-henrique-da-silva/"><img src="assets/images/linkedin.png" alt=""></a></div>
+                            <div class="section-footer-midias-img"><a href=""><img src="assets/images/whatsapp.png" alt=""></a></div>
                         </div>
-                        <div class="copyright"><small>&copy; Copyright 2021, Bruno Henrique da Silva</small></div>
+                        <div class="copyright"><small>&copy; Copyright 2021, Bruno Henrique da Silva Mosko</small></div>
                     </div>  
                     <div class="section-footer-info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis vitae repellendus sequi, fugit quaerat nisi recusandae odio laudantium reprehenderit et maiores, similique nobis mollitia totam sed delectus illo? Deleniti! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum accusamus est autem dolorem maxime, dolore consequatur vero ex, exercitationem aliquid at corrupti pariatur, voluptatem mollitia porro! Dicta mollitia ducimus voluptates.
-                    </div>
-                    <div class="section-footer-subscribe">
-                        <form class="section-footer-form" method="POST">
-                            <div class="section-footer-form-info">
-                                <input type="text" name="email" id="email" class="form-control" placeholder="Email para se inscrever:"/>
-                            <div class="form-control">
-                                <div>
-                                    <input type="submit" value="Enviar mensagem:" class="button" />
-                                </div>
-                            </div>
-                        </form>
+                        Oferecendo serviços de qualidade, a HS TECH tem disponibilidade de até 24 horas úteis para resolver os problemas técnicos da empresa. Entre em contato saiba mais.
                     </div>
                 </div>
             </div>
