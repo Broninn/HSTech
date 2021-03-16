@@ -8,17 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript">
-        window.onload = function () {
-            document.querySelector(".menuMobile").addEventListener("click", function () {
-                if(document.querySelector(".menu nav ul").style.display == 'flex') {
-                    document.querySelector(".menu nav ul").style.display = 'none';
-                } else {
-                    document.querySelector(".menu nav ul").style.display = 'flex';
-                }
-            });
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -29,25 +18,28 @@
                 </div>
             </div>
             <div class="menu" id="menu">
+                <div class="menu-opener" id="menu-opener" onclick="menuToggle()">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
                 <nav id="nav" class="navbar">
-                    <div class="menuMobile">
-                        <div class="mm_line"></div>
-                        <div class="mm_line"></div>
-                        <div class="mm_line"></div>
+                    <div class="menu-area" id="menu-area">
+                        <ul>
+                            <li class="active"><a href="#">HOME</a></li>
+                            <li><a href="#aboutus">Sobre</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#prices">Preços</a></li>
+                            <li><a href="#aditionals">Adicionais</a></li>
+                            <li><a href="#facts">Alguns fatos</a></li>
+                            <li><a href="#footer">Contato</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li class="active"><a href="#">HOME</a></li>
-                        <li><a href="#aboutus">Sobre</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#prices">Preços</a></li>
-                        <li><a href="#aditionals">Adicionais</a></li>
-                        <li><a href="#facts">Alguns fatos</a></li>
-                        <li><a href="#footer">Contato</a></li>
-                    </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <script src="assets/js/script.js"></script>
     <main>
         <section class="banner">
             <div class="sliders">
@@ -164,28 +156,24 @@
                     </div>
                     <div class="section-aditional-info">
                         <div class="section-aditional-info-list">
-                            <div class="section-aditional-info-list-icon"><img src="assets/images/check.png" alt=""></div>
                             <div class="section-aditional-info-list-text">
                                 <h2>Sua empresa nas pesquisas do Google</h2>
                                 <p>Seus objetivos aumentam quando o Google indica você no maior buscador de pesquisas do mundo, e tudo isso através de um site totalmente leve e responsivo para todos os equipamentos eletrônicos.</p>
                             </div>
                         </div>
                         <div class="section-aditional-info-list">
-                            <div class="section-aditional-info-list-icon"><img src="assets/images/check.png" alt=""></div>
                             <div class="section-aditional-info-list-text">
                                 <h2>Mostre seus produtos para o mundo</h2>
                                 <p>Com um site, você consegue mostrar para todos o que você comercializa, e isso atrai vários clientes somente com um layout de site bonito e organizado, com fotos e informações.</p>
                             </div>
                         </div>
                         <div class="section-aditional-info-list">
-                            <div class="section-aditional-info-list-icon"><img src="assets/images/check.png" alt=""></div>
                             <div class="section-aditional-info-list-text">
                                 <h2>Seja visitado a qualquer hora do dia (ou da noite)</h2>
                                 <p>Um site funciona como uma vitrine 24 horas aberta por dia, onde seus clientes podem pesquisar seus produtos a qualquer momento, quando mais for conveniente para ele.</p>
                             </div>
                         </div>
                         <div class="section-aditional-info-list">
-                            <div class="section-aditional-info-list-icon"><img src="assets/images/check.png" alt=""></div>
                             <div class="section-aditional-info-list-text">
                                 <h2>Tenha mais que a loja física</h2>
                                 <p>Encaminhe para diversos clientes a sua loja virtual, para que todos os clientes possam ver, principalmente fora do horário de trabalho.</p>
